@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .footer {
+    flex-shrink: 0;
+    height: 72px;
+    background-color: #1F2934;
+}
