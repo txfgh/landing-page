@@ -10,6 +10,19 @@ body {
 .header, .footer, .first {
     color: #F9FAF8;
     background-color: #1F2934;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 50px;
+}
+
+.header {
+    display: flex;
+}
+
+.links {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
 }
 
 .first, .second, .third, .fourth {
@@ -31,9 +44,17 @@ body {
     background-color: #e5e7eb;
 }
 
-a {
+.header {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 800;
+}
+
+a, p {
     text-decoration: none;
-    color: #f9faf8;
+    color: #e5e7eb;
+    font-size: 18px;
+    font-weight: normal;
 }
 
 .header, .footer {
@@ -49,6 +70,8 @@ a {
 
 h1 {
     margin: 0px;
+    font-size: 48px;
+    font-weight: extra-bold;
 }
 
 button, .cta {
