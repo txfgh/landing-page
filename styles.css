@@ -7,26 +7,61 @@ body {
     flex-direction: column;
 }
 
+p {
+    margin: 0px;
+}
+
 .header, .footer, .first {
     color: #F9FAF8;
     background-color: #1F2934;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 50px;
+}
+
+.header, .footer {
+    flex-shrink: 0;
+    height: 72px;
+    line-height: 72px;
 }
 
 .header {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 800;
     display: flex;
+    padding-bottom: 50px;
 }
 
-.links {
-    margin-left: auto;
-    display: flex;
-    gap: 20px;
+.footer {
+    text-align: center;
 }
 
 .first, .second, .third, .fourth {
     flex: 1;
+}
+
+.first {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.first img {
+    margin-left: 50px;
+}
+
+.first-text {
+    height: 200px;
+}
+
+.first-text button {
+    margin-top: 19px;
+}
+
+.second {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 50px;
+    margin-bottom: 75px;
 }
 
 .second, .third, .fourth {
@@ -36,18 +71,44 @@ body {
     align-items: center;
 }
 
+.third {
+    background-color: #e5e7eb;
+    padding: 5% 15%;
+}
+
+.third blockquote {
+    font-size: 36px;
+    color: #1f2937;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote figcaption {
+    font-weight: bold;
+    text-align: justify;
+    align-self: flex-end;
+    padding-right: 15%;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 .images {
     display: flex;
 }
 
-.third {
-    background-color: #e5e7eb;
-}
-
-.header {
-    font-size: 24px;
-    color: #F9FAF8;
-    font-weight: 800;
+.links {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
 }
 
 a, p {
@@ -57,24 +118,29 @@ a, p {
     font-weight: normal;
 }
 
-.header, .footer {
-    flex-shrink: 0;
-    height: 72px;
-}
-
-.content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+h1, h2 {
+    font-weight: extra-bold;
 }
 
 h1 {
     margin: 0px;
     font-size: 48px;
-    font-weight: extra-bold;
+}
+
+h2 {
+    font-size: 36px;    
+    color: #1f2937;
 }
 
 button, .cta {
     background-color: #3882f6;
     color: #f9faf8;
+    border-radius: 5px;
+    padding: 5px 20px;
 }
+
+.images figcaption {
+    text-align: center;
+    padding: 0px 10px;
+}
+
